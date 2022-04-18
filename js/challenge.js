@@ -23,7 +23,7 @@ let timeOutId = setInterval(() => {
 }, 1000);
 
 pause.addEventListener("click", () => {
-  if (pause.textContent === "pause") {
+  if (pause.textContent === " pause ") {
     pause.textContent = "resume";
     incrementElement.setAttribute("disabled", true);
     decrementElement.setAttribute("disabled", true);
@@ -31,7 +31,7 @@ pause.addEventListener("click", () => {
     submit.setAttribute("disabled", true);
     clearInterval(timeOutId);
   } else {
-    pause.textContent = "pause";
+    pause.textContent = " pause ";
     incrementElement.removeAttribute("disabled");
     decrementElement.removeAttribute("disabled");
     heartElement.removeAttribute("disabled");
